@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">灵犀视频</string>
+    <string name="bottom_nav_home">首页</string>
+    <string name="bottom_nav_new">最新</string>
+    <string name="bottom_nav_account">Notifications</string>
+    <string name="url">m.kpd408.com</string>
+    <string name="google_app_id">ca-app-pub-2368191189662624~5140029622</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

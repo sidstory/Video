@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Skeleton="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    Skeleton:cardElevation="0dp"
+    Skeleton:cardCornerRadius="8dp"
+    android:layoutDirection="ltr"
+    Skeleton:cardUseCompatPadding="true"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <io.rmiri.skeleton.SkeletonGroup
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:id="@+id/sort_skeletonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        Skeleton:SK_BackgroundViewsColor="#EEEEEE"
+        Skeleton:SK_animationAutoStart="true"
+        Skeleton:SK_animationDirection="LTR"
+        Skeleton:SK_animationDuration="1000"
+        Skeleton:SK_animationFinishType="gradient"
+        Skeleton:SK_animationNormalType="gradient"
+        Skeleton:SK_backgroundMainColor="@android:color/transparent"
+        Skeleton:SK_highLightColor="#DEDEDE">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <io.rmiri.skeleton.SkeletonView
+                android:id="@+id/skeleton_recycle_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                Skeleton:SK_cornerRadius="8dp"
+                Skeleton:SK_padding="0dp"
+                Skeleton:SK_shapeType="rect">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/sort_recycle_img"
+                    android:layout_width="220dp"
+                    android:layout_height="100dp" />
+            </io.rmiri.skeleton.SkeletonView>
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_gravity="center"
+                android:id="@+id/skeleton_recycle_text"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                Skeleton:SK_cornerRadius="5dp"
+                Skeleton:SK_padding="0dp"
+                Skeleton:SK_shapeType="rect">
+                <TextView
+                    android:id="@+id/sort_recycle_txt"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </io.rmiri.skeleton.SkeletonView>
+        </LinearLayout>
+    </io.rmiri.skeleton.SkeletonGroup>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,36 @@
+{
+  "project_info": {
+    "project_number": "525196815875",
+    "firebase_url": "https://lingxishiping.firebaseio.com",
+    "project_id": "lingxishiping",
+    "storage_bucket": "lingxishiping.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525196815875:android:647e3e96c88e9a37",
+        "android_client_info": {
+          "package_name": "com.sidstory.video"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsodVvEmvPEy6qV9eyzTykc7tSu5t3eqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525196815875-3en99cqjnkfs026i4rthvqi027ci6ion.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-2368191189662624~5140029622"
+    }
+  ],
+  "configuration_version": "1"
+}

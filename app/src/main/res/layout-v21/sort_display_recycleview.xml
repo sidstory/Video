@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Skeleton="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="#ffffff"
+    Skeleton:cardElevation="0dp"
+    Skeleton:cardCornerRadius="8dp"
+    android:layoutDirection="ltr"
+    Skeleton:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <io.rmiri.skeleton.SkeletonGroup
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:id="@+id/sort_display_skeletonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        Skeleton:SK_BackgroundViewsColor="#EEEEEE"
+        Skeleton:SK_animationAutoStart="true"
+        Skeleton:SK_animationDirection="LTR"
+        Skeleton:SK_animationDuration="1000"
+        Skeleton:SK_animationFinishType="gradient"
+        Skeleton:SK_animationNormalType="gradient"
+        Skeleton:SK_backgroundMainColor="@android:color/transparent"
+        Skeleton:SK_highLightColor="#DEDEDE">
+        <LinearLayout
+            android:id="@+id/sort_display_recycle_linearlayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <io.rmiri.skeleton.SkeletonView
+                android:id="@+id/skeleton_recycle_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                Skeleton:SK_cornerRadius="8dp"
+                Skeleton:SK_padding="0dp"
+                Skeleton:SK_shapeType="rect">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/sort_display_recycle_img"
+                    android:layout_width="220dp"
+                    android:layout_height="100dp" />
+            </io.rmiri.skeleton.SkeletonView>
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_gravity="center"
+                android:id="@+id/skeleton_recycle_text"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                Skeleton:SK_cornerRadius="5dp"
+                Skeleton:SK_padding="0dp"
+                Skeleton:SK_shapeType="rect">
+                <TextView
+                    android:id="@+id/sort_display_recycle_txt"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </io.rmiri.skeleton.SkeletonView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/watch_icon"
+                        android:src="@drawable/clock"
+                        android:layout_width="15dp"
+                        android:layout_height="17dp" />
+                    <TextView
+                        android:paddingLeft="2dp"
+                        android:id="@+id/sort_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="2dp"
+                        android:src="@drawable/eye"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/sort_watch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </io.rmiri.skeleton.SkeletonGroup>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Skeleton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".DetileActivity">
+   <io.rmiri.skeleton.SkeletonGroup
+       android:id="@+id/detail_activity_group"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       Skeleton:SK_BackgroundViewsColor="#EEEEEE"
+       Skeleton:SK_animationAutoStart="true"
+       Skeleton:SK_animationDirection="LTR"
+       Skeleton:SK_animationDuration="1000"
+       Skeleton:SK_animationFinishType="gradient"
+       Skeleton:SK_animationNormalType="gradient"
+       Skeleton:SK_backgroundMainColor="@android:color/transparent"
+       Skeleton:SK_highLightColor="#DEDEDE">
+      <io.rmiri.skeleton.SkeletonView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          Skeleton:SK_cornerRadius="8dp"
+          Skeleton:SK_padding="5dp"
+          Skeleton:SK_shapeType="rect">
+   <cn.jzvd.JzvdStd
+       android:visibility="invisible"
+       android:id="@+id/video_player"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"/>
+   </io.rmiri.skeleton.SkeletonView>
+
+   </io.rmiri.skeleton.SkeletonGroup>
+    <TextView
+        android:id="@+id/guess_like"
+        android:layout_below="@id/detail_activity_group"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dedede"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="猜你喜欢"
+        android:textSize="16sp" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_below="@id/guess_like"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/detail_adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-2368191189662624/2900523873">
+    </com.google.android.gms.ads.AdView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/guess_like"
+            android:id="@+id/detail_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/settings_relative"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        android:src="@mipmap/icon" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/setting_sologon"
+        android:textSize="18sp"
+        android:text="灵犀视频，看你想看"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundcorner"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:id="@+id/setting_version"
+            android:text="版本号:1.2-2019.5.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+</androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundcorner"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:id="@+id/setting_feedback"
+            android:textIsSelectable="true"
+            android:text="邮箱:smice.h@gmail.com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <RelativeLayout
+        android:id="@+id/settings_relative"
+        android:layout_below="@id/setting_sologon"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundcorner"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:text="关闭流量播放提醒"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/switch_wifidialog"
+            android:layout_marginRight="10dp"
+            app:sb_checked_color="#29b6f6"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/settings_relative1"
+        android:layout_below="@id/setting_sologon"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundcorner"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:text="关闭第一屏"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/switch_closesplash"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:id="@+id/feedback_info"
+        android:textSize="15sp"
+        android:hint="反馈内容"
+        android:background="@drawable/round_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/feedback_connect"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:hint="联系方式"
+        android:background="@drawable/round_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:background="@drawable/submit_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/feedback_submit"
+        android:text="提交"
+        android:stateListAnimator="@null"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+    android:layout_marginTop="10dp"
+    android:background="@drawable/submit_button"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/setting_checkupdate"
+    android:text="检测更新"
+    android:stateListAnimator="@null"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
